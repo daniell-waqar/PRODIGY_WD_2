@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; 
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7f00ff, #e100ff); 
+    border: 3px dashed #ffa500; /* Dashed border with orange color */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    animation: pulse 2s infinite alternate; 
+}
+
+#time {
+    color: #fff;
+    font-size: 50px;
+    padding: 20px 40px;
+    border-radius: 2.5rem;
+    margin: auto;
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+#ampm {
+    font-size: 24px; 
+    color: #f223f9; /* Color for AM/PM */
+    text-transform: uppercase; 
+    margin-top: -15px; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
